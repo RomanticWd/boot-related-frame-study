@@ -1,4 +1,4 @@
-package org.liu.demo.controller;
+package org.liu.demo.listener;
 
 import org.liu.demo.bean.User;
 import org.liu.demo.dao.UserDao;
