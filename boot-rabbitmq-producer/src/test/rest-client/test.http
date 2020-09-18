@@ -6,3 +6,9 @@ GET localhost:8081/topicProduce1
 
 ### 生产fanout-topic消息
 GET localhost:8081/fanoutProduce
+
+### 测试消息推送到server，但是在server里找不到交换机情况
+GET localhost:8081/testMessageAck
+
+### 测试消息推送到server，但是在server里找不到队列情况
+GET localhost:8081/testMessageAck2
