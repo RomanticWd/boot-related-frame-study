@@ -1,2 +1,6 @@
-# 生产消息
-GET localhost:8080/produce
+###生产direct-topic消息
+GET localhost:8081/directProduce
+
+
+### 生产direct-topic消息
+GET localhost:8081/topicProduce1
