@@ -1,6 +1,8 @@
 ###生产direct-topic消息
 GET localhost:8081/directProduce
 
-
 ### 生产direct-topic消息
 GET localhost:8081/topicProduce1
+
+### 生产fanout-topic消息
+GET localhost:8081/fanoutProduce
