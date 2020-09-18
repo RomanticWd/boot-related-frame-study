@@ -8,3 +8,6 @@ spring:
     port: 5672
     username: admin
     password: admin
+    listener:
+      simple:
+        acknowledge-mode: manual
