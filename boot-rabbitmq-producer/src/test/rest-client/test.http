@@ -12,3 +12,6 @@ GET localhost:8081/testMessageAck
 
 ### 测试消息推送到server，但是在server里找不到队列情况
 GET localhost:8081/testMessageAck2
+
+### 测试自定义的starter
+GET localhost:8081/testStarter

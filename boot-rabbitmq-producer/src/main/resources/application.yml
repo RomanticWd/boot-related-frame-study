@@ -12,3 +12,6 @@ spring:
     publisher-confirms: true
     #确认消息已发送到队列(Queue)
     publisher-returns: true
+hello:
+  world:
+    word: my starter

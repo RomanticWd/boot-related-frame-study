@@ -1,0 +1,4 @@
+#SpringBoot 自动化配置最终就是要扫描 META-INF/spring.factories 来加载项目的自动化配置类。
+# SpringFactoriesLoader类的loadSpringFactories方法
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.liu.demo.config.HelloWorldAutoConfiguration

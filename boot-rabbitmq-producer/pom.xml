@@ -35,6 +35,13 @@
 			<optional>true</optional>
 		</dependency>
 
+        <!--	测试自定义的starter	-->
+		<dependency>
+			<groupId>org.liu</groupId>
+			<artifactId>boot-starter-helloworld</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
