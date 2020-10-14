@@ -1,2 +1,9 @@
 # springboot-starter开发
-
+### 20201014
+1. 原理：springboot会通过SpringFactoriesLoader类的loadSpringFactories方法扫描 所有包的META-INF/spring.factories 来加载项目启动所需要的class。
+并放到spring管理的容器中。
+2. 自定义starter指定HelloWorldAutoConfiguration类
+3. HelloWorldAutoConfiguration类通过注解@ConditionalOnClass绑定启动条件与@EnableConfigurationProperties绑定配置文件HelloWorldProperties类。
+4. HelloWorldProperties指定前缀hello.world，并与HelloWorldProperties中的属性名进行组合，比如属性word，就会去application.yml的配置文件中寻找hello.world.word
+的配置属性，并加载到HelloWorldProperties中。
+5. pom.xml中增加spring-boot-configuration-processor使引用starter的时候有配置代码提示。

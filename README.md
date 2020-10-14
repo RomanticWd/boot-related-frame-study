@@ -6,3 +6,4 @@
 2. boot-kafka（关于kafka的原理及源码学习）
 3. boot-rabbitmq-consumer（关于rabbitmq的原理及源码学习）
 4. boot-rabbitmq-producer（关于rabbitmq的原理及源码学习）
+5. boot-starter-helloworld（关于自定义springboot-starter的原理学习）
