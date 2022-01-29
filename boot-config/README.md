@@ -1,0 +1,2 @@
+# 基于springboot的配置平台
+除了TestController和UserService两个类，其他类实现类一个简易的配置中心。
