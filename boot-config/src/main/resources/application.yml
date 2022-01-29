@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: boot-config
+
+person:
+  name: Hydra
+  age: 18

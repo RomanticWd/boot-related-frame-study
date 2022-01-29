@@ -33,7 +33,7 @@ public class ScanRunner implements CommandLineRunner {
         rootPath = FileScanner.getRealRootPath(rootPath);
         for (String fullPath : fileList) {
             String shortName = fullPath.replace(rootPath, "").replace(FileScanner.TYPE_CLASS, "");
-            String packageFileName = shortName.replace(Matcher.quoteReplacement(File.separator), "\\.");
+            String packageFileName = shortName.replaceAll(Matcher.quoteReplacement(File.separator), "\\.");
 
             try {
                 Class<?> clazz = Class.forName(packageFileName);

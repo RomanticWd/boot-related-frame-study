@@ -1,7 +1,5 @@
 package site.lgong.config.components;
 
-import org.springframework.util.CollectionUtils;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,11 +15,11 @@ public class FileScanner {
 
     public static final String TYPE_CLASS = ".class";
 
-    public static final String TYPE_YML=".yml";
+    public static final String TYPE_YML = ".yml";
 
-    public static List<String> findFileByType(String rootPath, List<String> fileList,String fileType) {
+    public static List<String> findFileByType(String rootPath, List<String> fileList, String fileType) {
 
-        if (CollectionUtils.isEmpty(fileList)) {
+        if (fileList == null) {
             fileList = new ArrayList<>();
         }
 
@@ -33,7 +31,7 @@ public class FileScanner {
             // 文件目录，遍历下级目录
             String[] subFileList = rootFile.list();
             for (String file : subFileList) {
-                String subFilePath = rootPath + "\\" + file;
+                String subFilePath = rootPath + "/" + file;
                 File subFile = new File(subFilePath);
                 if (!subFile.isDirectory()) {
                     addFile(subFile.getPath(), fileList, fileType);
@@ -46,10 +44,10 @@ public class FileScanner {
         return fileList;
     }
 
-    private static void addFile(String filePath, List<String> fileList, String fileType) {
+    private static void addFile(String fileName, List<String> fileList, String fileType) {
         // 将后缀类型为fileType的加入集合
-        if (filePath.endsWith(fileType)) {
-            fileList.add(filePath);
+        if (fileName.endsWith(fileType)) {
+            fileList.add(fileName);
         }
     }
 
