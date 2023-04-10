@@ -8,3 +8,4 @@
 4. boot-rabbitmq-producer（关于rabbitmq的原理及源码学习）
 5. boot-starter-helloworld（关于自定义springboot-starter的原理学习）
 6. boot-config（关于简易配置中心组件的学习）
+7. boot-simple（关于springboot自身的源码学习）
