@@ -15,6 +15,8 @@ public class TestController {
     @GetMapping("/test/aop")
     public String aopTest() {
         log.info("aopTest method");
+        // 异常代码，观察切面和全局异常的打印顺序
+        int i = 10 / 0;
         return "success";
     }
 
