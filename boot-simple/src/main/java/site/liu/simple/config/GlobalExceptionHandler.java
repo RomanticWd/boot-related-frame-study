@@ -12,7 +12,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     @ExceptionHandler(value = Exception.class)
     public String handlerException(Exception e) {
-        log.info("全局异常捕获");
+        log.info("全局异常捕获：{}", e.getMessage());
         return "handlerException";
     }
 
